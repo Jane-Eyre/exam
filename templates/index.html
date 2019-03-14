@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>MathTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{% static "bootstrap/css/animate.css" %}">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.css" %}">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="{% static "bootstrap/css/style.css" %}">
+    <style>
+        .equation {
+            color: white;
+            font-size: 50px;
+        }
+
+    </style>
+
+    <!-- Modernizr JS -->
+    <script src="{% static "bootstrap/js/modernizr-2.6.2.min.js" %}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="{% static "bootstrap/js/respond.min.js" %}"></script>
+	<![endif]-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    {#    <script src="/static/bootstrap/js/bootstrap.min.js"></script>#}
+    <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+</head>
+
+
+<body>
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <div id="page">
+
+        <div id="fh5co-gallery" class="fh5co-section-gray">
+            <div class="container">
+                <div class="row row-bottom-padded-md">
+                    <div class="col-md-12">
+                        <ul id="fh5co-gallery-list">
+                            <li class="one-third animate-box" data-animate-effect="fadeIn"
+                                style="background-image: url({% static "images/bg_1.jpg" %}); ">
+                                <a href="/show">
+                                    <div class="case-studies-summary">
+                                        <span>数学</span>
+                                        <h2>加减法挑战！</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="one-third animate-box" data-animate-effect="fadeIn"
+                                style="background-image: url({% static "images/bg_2.jpg" %});">
+                                <a href="#" class="color-2">
+                                    <div class="case-studies-summary">
+                                        <span>数学</span>
+                                        <h2>乘除法挑战！</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="one-third animate-box" data-animate-effect="fadeIn"
+                                style="background-image: url({% static "images/bg_3.jpg" %});">
+                                <a href="#" class="color-2">
+                                    <div class="case-studies-summary">
+                                        <span>英语</span>
+                                        <h2>字母挑战！</h2>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="{% static "bootstrap/js/jquery.min.js" %}"></script>
+    <!-- jQuery Easing -->
+    <script src="{% static "bootstrap/js/jquery.easing.1.3.js" %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+    <!-- Waypoints -->
+    <script src="{% static "bootstrap/js/jquery.waypoints.min.js" %}"></script>
+    <!-- Carousel -->
+    <script src="{% static "bootstrap/js/owl.carousel.min.js" %}"></script>
+    <!-- countTo -->
+    <script src="{% static "bootstrap/js/jquery.countTo.js" %}"></script>
+    <!-- Stellar -->
+    <script src="{% static "bootstrap/js/jquery.stellar.min.js" %}"></script>
+    <!-- Magnific Popup -->
+    <script src="{% static "bootstrap/js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "bootstrap/js/magnific-popup-options.js" %}"></script>
+
+
+    <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+
+    <script src="{% static "bootstrap/js/simplyCountdown.js" %}"></script>
+    <!-- Main -->
+    <script src="{% static "bootstrap/js/main.js" %}"></script>
+
+
+</body>
+</html>
+

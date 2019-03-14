@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static "bootstrap/css/auth.css" %}">
+</head>
+<body>
+<div class="lowin lowin-blue">
+    <div class="lowin-brand">
+        <img src="../static/images/peki.png" alt="logo">
+    </div>
+    <div class="lowin-wrapper">
+        <div class="lowin-box lowin-register">{% csrf_token %}
+            <div class="lowin-box-inner">
+                <form action="" method="post">
+                    <div class="lowin-group">
+                        <label>用户名 (只能用数字和英文哦)</label>
+                        <input type="text" autocomplete="username" name="account" class="lowin-input">
+                    </div>
+                    <div class="lowin-group">
+                        <label>密码 (要牢牢记住的)</label>
+                        <input type="password" name="password" autocomplete="current-password" class="lowin-input">
+                    </div>
+                    <div class="lowin-group">
+                        <label>确认一次密码吧</label>
+                        <input type="password" name="password2" autocomplete="current-password" class="lowin-input">
+                    </div>
+                    {% if errors %}
+                        {% for error in errors %}
+                            <p style="color: red;">
+                                {{ error }}
+                            </p>
+                        {% endfor %}
+                    {% endif %}
+                    <input type="submit" value="注册" class="lowin-btn">
+
+                    <div class="text-foot">
+                        已经有账户了？<a href="/login" class="login-link">赶紧开始吧</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+<script src="{% static "bootstrap/js/auth.js" %}"></script>
+<script>
+    Auth.init({
+        login_url: '#login',
+        forgot_url: '#forgot'
+    });
+</script>
+
+</html>

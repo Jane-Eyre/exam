@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">测试结果</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in report %}
+            <tr>
+                <th scope="row"></th>
+                <td><p style="text-align: center"><label>{{ item }}</label></p></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
