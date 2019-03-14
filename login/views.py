@@ -21,7 +21,7 @@ def show(request):
         print("session:", username)
         data = generateTest(request)
         json.dumps(data)
-        return render(request, 'testMath.html', {'data': data})
+        return render(request, '../static/testMath.html.backup', {'data': data})
     else:
         return render(request, 'login.html')
 
