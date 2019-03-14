@@ -9,6 +9,8 @@ urlpatterns = [
     path('show/', views.show),
     path('answer/', views.answer),
     path('summary/', views.summary),
+    path('single/', views.single),
+    path('detail/', views.summary_detail),
     # url(r'^show/', views.test),
     # url(r'^answer/', views.answer),
     # url(r'^summary', views.summary),

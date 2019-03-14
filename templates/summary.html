@@ -6,36 +6,45 @@
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
     <script src="/static/bootstrap/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
 <div>
+    <ul class="breadcrumb">
+        <li><a href="../index/">首页</a> <span class="divider">/</span></li>
+        <li><a href="../logout/">退出</a> <span class="divider">/</span></li>
+    </ul>
+    <div class="fh5co-loader"></div>
 
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th scope="col">测试结果</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><p style="text-align: center"><label>哪个小朋友</label></p></td>
-            <td><p style="text-align: center"><label>对的题目</label></p></td>
-            <td><p style="text-align: center"><label>错的题目</label></p></td>
-            <td><p style="text-align: center"><label>今天做了多少道</label></p></td>
-
-        </tr>
-        {% for item in data %}
+    <div>
+        <table class="table table-striped">
+            <thead>
             <tr>
-                <td><p style="text-align: center"><label>{{ item.which_angel }}</label></p></td>
-                <td><p style="text-align: center"><label>{{ item.right }}</label></p></td>
-                <td><p style="text-align: center"><label>{{ item.wrong }}</label></p></td>
-                <td><p style="text-align: center"><label>{{ item.total }}</label></p></td>
+                <th scope="col">测试结果</th>
             </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            <tr>
+                <td><p style="text-align: center"><label id=>哪个小朋友</label></p></td>
+                <td><p style="text-align: center"><label>对的题目</label></p></td>
+                <td><p style="text-align: center"><label>错的题目</label></p></td>
+                <td><p style="text-align: center"><label>今天做了多少道</label></p></td>
+                <td></td>
+
+            </tr>
+            {% for item in data %}
+                <tr>
+                    <td><p style="text-align: center"><a
+                            href="/detail?which_angel={{ item.which_angel }}">{{ item.which_angel }}</a></p></td>
+                    <td><p style="text-align: center"><label>{{ item.right }}</label></p></td>
+                    <td><p style="text-align: center"><label>{{ item.wrong }}</label></p></td>
+                    <td><p style="text-align: center"><label>{{ item.total }}</label></p></td>
+{#                   <td><a id="{{ item.which_angel }}" href="/detail">查看详情</a></td>#}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
 </body>
 </html>

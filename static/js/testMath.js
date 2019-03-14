@@ -22,6 +22,7 @@ function showTest() {
     $("#uanswer").val("");
     $("#uanswer").focus();
     $("#angel").text(data.which_angel);
+    $("#num").html(num += 1);
 }
 
 function startTest() {

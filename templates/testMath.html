@@ -109,6 +109,7 @@
 
     var data
     var start_time;
+    var num = 0
     $(document).ready(function () {
         $("#num").html(num);
         $("#endText").attr("disabled", "disabled");
@@ -133,6 +134,7 @@
             $("#uanswer").focus();
             return;
         }
+        start_time = new Date()
         console.log("your_answer:" + your_answer);
         let operation = data.operation;
         let body = data.body;
@@ -190,7 +192,7 @@
             processData: false,
             data: JSON.stringify(blackBoard),
             success: function (results) {
-                $(location).attr('href', '../logout/');
+                $(location).attr('href', '../single/');
             },
             error: function (results) {
                 console.log("error:" + results);

@@ -27,25 +27,6 @@ def show(request):
         return render(request, 'login.html')
 
 
-def generateTest(request):
-    username = request.session.get("username")
-    n1 = random.randint(11, 100)
-    n2 = random.randint(10, n1 - 1)
-    s_p = '{0} - {1} ='.format(n1, n2)
-    s_m = '{0} + {1} ='.format(n1, n2)
-    if n1 % 2 == 0:
-        s = s_p
-        operation = '-'
-        r_answer = n1 - n2
-    else:
-        s = s_m
-        operation = '+'
-        r_answer = n1 + n2
-    data = {'operation': operation, 'body': s, 'result': r_answer, 'num1': n1, 'num2': n2,
-            'which_angel': username}
-    return data
-
-
 def answer(request):
     result = str(request.body, 'utf-8')
     print("result:", result)
@@ -61,6 +42,82 @@ def index(request):
         return render(request, 'index.html')
     else:
         return render(request, 'login.html')
+
+
+# 用户退出
+def my_logout(request):
+    del request.session['username']
+    return redirect('/login/')
+
+
+def summary(request):
+    data = query_today(request)
+    return render(request, 'summary.html', {"data": data})
+
+
+def query_today(request):
+    data = list(MathSummary.objects.all())
+    return data
+
+
+def single(request):
+    data = query_today_single(request)
+    return render(request, "SingleSummary.html", {"data": data})
+
+
+def query_today_single(request):
+    username = request.session.get("username")
+    today = datetime.datetime.now().date()
+    data = list(Arithmetic.objects.filter(which_angel=username, date=today))
+    return data
+
+
+def query_today_specific_single(which_angel):
+    today = datetime.datetime.now().date()
+    data = list(Arithmetic.objects.filter(which_angel=which_angel, date=today))
+    for x in data:
+        print(x)
+    return data
+
+
+def summary_detail(request):
+    which_ange = request.GET.get("which_angel")
+    print(which_ange)
+    data = query_today_specific_single(which_ange)
+    return render(request, "SingleSummary.html", {"data": data})
+
+
+def saveLog(result):
+    result = json.loads(result)
+    today = datetime.datetime.now().date()
+
+    a = Arithmetic(which_angel=result['whichAngel'],
+                   date=result['date'],
+                   score=result["score"],
+                   elapsed_time=result['elapsed_time'],
+                   results=result['result'],
+                   body=result['body'],
+                   answer=result['answer'],
+                   operation=result['operation'])
+    a.save()
+    if MathSummary.objects.filter(which_angel=a.which_angel, date=today):
+        all_test = MathSummary.objects.get(which_angel=a.which_angel, date=today).total
+        if a.score:
+            right_num = MathSummary.objects.get(which_angel=a.which_angel, date=today).right
+            ms = MathSummary.objects.get(which_angel=a.which_angel, date=today)
+            ms.right = right_num + 1
+
+        else:
+            wrong_num = MathSummary.objects.get(which_angel=a.which_angel, date=today).wrong
+            ms = MathSummary.objects.get(which_angel=a.which_angel, date=today)
+            ms.wrong = wrong_num + 1
+        ms.total = all_test + 1
+    else:
+        if a.score:
+            ms = MathSummary.objects.create(which_angel=a.which_angel, total=1, date=today, right=1, wrong=0)
+        else:
+            ms = MathSummary.objects.create(which_angel=a.which_angel, total=1, date=today, right=0, wrong=1)
+    ms.save()
 
 
 # 用户注册
@@ -131,7 +188,7 @@ def my_login(request):
             user = auth.authenticate(username=account, password=password)
             if user is not None:
                 if user.is_active:
-                    if user.username == "bbb":
+                    if user.username == "teacher":
                         return redirect('/summary')
                     auth.login(request, user)
                     print('account:', account)
@@ -144,58 +201,20 @@ def my_login(request):
     return render(request, 'login.html', {'errors': errors})
 
 
-# 用户退出
-def my_logout(request):
-    del request.session['username']
-    return redirect('/login/')
-
-
-def summary(request):
-    data = query_today(request)
-    return render(request, 'summary.html', {"data": data})
-
-
-def saveLog(result):
-    result = json.loads(result)
-    today = datetime.datetime.now().date()
-
-    a = Arithmetic(which_angel=result['whichAngel'],
-                   date=result['date'],
-                   score=result["score"],
-                   elapsed_time=result['elapsed_time'],
-                   results=result['result'],
-                   body=result['body'],
-                   answer=result['answer'],
-                   operation=result['operation'])
-    a.save()
-    if MathSummary.objects.filter(which_angel=a.which_angel, date=today):
-        all_test = MathSummary.objects.get(which_angel=a.which_angel, date=today).total
-        if a.score:
-            right_num = MathSummary.objects.get(which_angel=a.which_angel, date=today).right
-            ms = MathSummary.objects.get(which_angel=a.which_angel, date=today)
-            ms.right = right_num + 1
-            print("对了一道题")
-
-        else:
-            wrong_num = MathSummary.objects.get(which_angel=a.which_angel, date=today).wrong
-            ms = MathSummary.objects.get(which_angel=a.which_angel, date=today)
-            ms.wrong = wrong_num + 1
-            print("错了一道题")
-        MathSummary.objects.get(which_angel=a.which_angel, date=today).total = all_test + 1
-    else:
-        if a.score:
-            ms = MathSummary.objects.create(which_angel=a.which_angel, total=1, date=today, right=1, wrong=0)
-        else:
-            ms = MathSummary.objects.create(which_angel=a.which_angel, total=1, date=today, right=0, wrong=1)
-    ms.save()
-
-
-def query_today(request):
-    data = list(MathSummary.objects.all())
-    return data
-
-
-def query_today_single(request):
+def generateTest(request):
     username = request.session.get("username")
-    today = datetime.datetime.now().date()
-    data = list(MathSummary.objects.filter(username=username, date=today))
+    n1 = random.randint(11, 100)
+    n2 = random.randint(10, n1 - 1)
+    s_p = '{0} - {1} ='.format(n1, n2)
+    s_m = '{0} + {1} ='.format(n1, n2)
+    if n1 % 2 == 0:
+        s = s_p
+        operation = '-'
+        r_answer = n1 - n2
+    else:
+        s = s_m
+        operation = '+'
+        r_answer = n1 + n2
+    data = {'operation': operation, 'body': s, 'result': r_answer, 'num1': n1, 'num2': n2,
+            'which_angel': username}
+    return data

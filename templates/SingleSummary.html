@@ -11,7 +11,10 @@
 
 <body>
 <div>
-
+    <ul class="breadcrumb">
+        <li><a href="../index/">首页</a> <span class="divider">/</span></li>
+        <li><a href="../logout/">退出</a> <span class="divider">/</span></li>
+    </ul>
     <table class="table table-striped">
         <thead>
         <tr>
@@ -20,18 +23,23 @@
         </thead>
         <tbody>
         <tr>
+            <td><p style="text-align: center"><label>哪个小朋友</label></p></td>
             <td><p style="text-align: center"><label>题干</label></p></td>
             <td><p style="text-align: center"><label>答案</label></p></td>
             <td><p style="text-align: center"><label>你的答案</label></p></td>
             <td><p style="text-align: center"><label>用时</label></p></td>
+            <td><p style="text-align: center"><label>结果</label></p></td>
+
 
         </tr>
         {% for item in data %}
             <tr>
                 <td><p style="text-align: center"><label>{{ item.which_angel }}</label></p></td>
-                <td><p style="text-align: center"><label>{{ item.right }}</label></p></td>
-                <td><p style="text-align: center"><label>{{ item.wrong }}</label></p></td>
-                <td><p style="text-align: center"><label>{{ item.total }}</label></p></td>
+                <td><p style="text-align: center"><label>{{ item.body }}</label></p></td>
+                <td><p style="text-align: center"><label>{{ item.results }}</label></p></td>
+                <td><p style="text-align: center"><label>{{ item.answer }}</label></p></td>
+                <td><p style="text-align: center"><label>{{ item.elapsed_time }}秒</label></p></td>
+                <td><p style="text-align: center"><label>{{ item.score }}</label></p></td>
             </tr>
         {% endfor %}
         </tbody>
