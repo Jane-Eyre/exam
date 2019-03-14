@@ -9,6 +9,7 @@ from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from login.models import Arithmetic
+import datetime
 
 path = os.path.dirname(os.path.realpath(__file__))
 log_path = path + os.sep + 'log' + os.sep
@@ -110,6 +111,7 @@ def register(request):
 # 用户登录
 @csrf_exempt
 def my_login(request):
+    queryToday(request)
     errors = []
     account = None
     password = None
@@ -131,9 +133,6 @@ def my_login(request):
                     auth.login(request, user)
                     print('account:', account)
                     request.session["username"] = user.username
-                    # if account == 'zhoulaoshi':
-                    # # report = readLog()
-                    # # return render(request, 'summary.html', {'report': report})
                     return redirect('/index/')
                 else:
                     errors.append('用户名错误')
@@ -164,3 +163,9 @@ def saveLog(result):
                    answer=result['answer'],
                    operation=result['operation'])
     a.save()
+
+
+def queryToday(request):
+    today = datetime.datetime.now().date()
+    for e in Arithmetic.objects.all():
+        print(e.date)

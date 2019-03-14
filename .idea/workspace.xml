@@ -2,63 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="074222f9-7c05-4749-b776-a17592e3dae7" name="Default Changelist" comment="today">
-      <change afterPath="$PROJECT_DIR$/static/js/testMath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/log/jinyanju-2019-03-10-13-15-27.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/log/jinyanju-2019-03-10-13-44-49.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/log/jinyanju-2019-03-10-13-48-02.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/log/sai-2019-03-10-04-20-46.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/log/sai-2019-03-10-04-21-02.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/log/sai-2019-03-10-04-21-23.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/migrations/0002_auto_20190310_1059.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/migrations/0003_auto_20190310_1105.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/migrations/0004_auto_20190310_1232.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/migrations/0005_auto_20190310_1308.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/login/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/tests.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/auth.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/google_map.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/google_map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.countTo.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.countTo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.easing.1.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.easing.1.3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.magnific-popup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.stellar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.stellar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.waypoints.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/magnific-popup-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/magnific-popup-options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/modernizr-2.6.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/modernizr-2.6.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/respond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/respond.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/simplyCountdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/simplyCountdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/testMath.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testMath.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/testMath_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testMath_test.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +18,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/exam$manage.coverage" NAME="manage Coverage Results" MODIFIED="1552531040611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/exam$tests.coverage" NAME="tests Coverage Results" MODIFIED="1552288484175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/login" />
+    <SUITE FILE_PATH="coverage/exam$manage.coverage" NAME="manage Coverage Results" MODIFIED="1552539481082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/exam$tests.coverage" NAME="tests Coverage Results" MODIFIED="1552538268346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/login" />
     <SUITE FILE_PATH="coverage/exam$models.coverage" NAME="models Coverage Results" MODIFIED="1552288380015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/login" />
     <SUITE FILE_PATH="coverage/exam$test.coverage" NAME="test Coverage Results" MODIFIED="1550411540797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testMath/migrations" />
     <SUITE FILE_PATH="coverage/exam$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1552288391214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/login" />
@@ -88,7 +39,23 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -101,16 +68,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/testMath.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2145">
-              <caret line="143" column="29" lean-forward="true" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="-744">
+              <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -118,20 +80,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/testMath.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="231">
               <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+            <state relative-caret-position="320">
+              <caret line="170" column="20" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
               <folding>
-                <element signature="e#20#29#0" expanded="true" />
+                <element signature="e#15#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://ec760a7a-46ce-4b94-82c7-4ec4039a668f/schema/main/table/login_arithmetic">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ec760a7a-46ce-4b94-82c7-4ec4039a668f/console_1.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="102" lean-forward="true" selection-start-line="3" selection-start-column="102" selection-end-line="3" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -139,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="165">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -150,14 +130,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spent</find>
       <find>time</find>
       <find>re</find>
       <find>query</find>
@@ -187,6 +166,7 @@
       <find>uanswer</find>
       <find>id=</find>
       <find>uans</find>
+      <find>login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/math.html" />
         <option value="$PROJECT_DIR$/templates/login1.html" />
         <option value="$PROJECT_DIR$/testMath/log/yuanbao-2019-02-15-14-24-08.log" />
         <option value="$PROJECT_DIR$/testMath/log/yoyo-2019-02-17.json" />
@@ -237,8 +216,6 @@
         <option value="$PROJECT_DIR$/templates/summary.html" />
         <option value="$PROJECT_DIR$/login/urls.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e0150329-cb39-4043-9ca7-c04603b27101/console_1.sql" />
-        <option value="$PROJECT_DIR$/login/tests.py" />
-        <option value="$PROJECT_DIR$/login/models.py" />
         <option value="$PROJECT_DIR$/static/bootstrap/js/jquery.magnific-popup.min.js" />
         <option value="$PROJECT_DIR$/static/bootstrap/js/respond.min.js" />
         <option value="$PROJECT_DIR$/static/bootstrap/js/jquery.stellar.min.js" />
@@ -246,11 +223,14 @@
         <option value="$PROJECT_DIR$/static/bootstrap/js/jquery.countTo.js" />
         <option value="$PROJECT_DIR$/static/js/testMath.js" />
         <option value="$PROJECT_DIR$/templates/register.html" />
-        <option value="$PROJECT_DIR$/login/views.py" />
         <option value="$PROJECT_DIR$/login/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/exam/__init__.py" />
-        <option value="$PROJECT_DIR$/templates/testMath.html" />
         <option value="$PROJECT_DIR$/exam/settings.py" />
+        <option value="$PROJECT_DIR$/login/tests.py" />
+        <option value="$PROJECT_DIR$/login/models.py" />
+        <option value="$PROJECT_DIR$/templates/testMath.html" />
+        <option value="$PROJECT_DIR$/login/views.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ec760a7a-46ce-4b94-82c7-4ec4039a668f/console_1.sql" />
       </list>
     </option>
   </component>
@@ -273,6 +253,11 @@
               <item name="exam" type="b2602c69:ProjectViewProjectNode" />
               <item name="exam" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -282,7 +267,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="directory" />
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -291,7 +276,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -470,8 +455,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.manage" />
-        <item itemvalue="Python.0001_initial" />
         <item itemvalue="Python.tests" />
+        <item itemvalue="Python.0001_initial" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.models" />
       </list>
@@ -507,6 +492,7 @@
       <workItem from="1552207213424" duration="1144000" />
       <workItem from="1552208547893" duration="19160000" />
       <workItem from="1552462850966" duration="19310000" />
+      <workItem from="1552532753922" duration="5583000" />
     </task>
     <task id="LOCAL-00001" summary="today">
       <created>1551413971814</created>
@@ -526,7 +512,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199771000" />
+    <option name="totallyTimeSpent" value="205354000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,30 +525,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49560633" visible="true" weight="0.16165951" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49560633" visible="true" weight="0.16380544" />
       <window_info id="Structure" order="1" sideWeight="0.5043937" side_tool="true" weight="0.31831187" />
       <window_info id="Favorites" order="2" sideWeight="0.5026362" side_tool="true" weight="0.31831187" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.39759037" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.270415" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.3192771" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.35783133" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3433735" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32797858" />
-      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32891566" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.5686747" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.12289157" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.30722892" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32891566" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="14" visible="true" weight="0.32931727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3297568" />
-      <window_info anchor="right" id="Database" order="4" weight="0.2067239" />
+      <window_info anchor="right" x="612" y="147" width="806" height="582" id="Database" order="4" type="WINDOWED" visible="true" weight="0.2067239" />
       <window_info anchor="right" id="Remote Host" order="5" weight="0.420237" />
     </layout>
   </component>
@@ -574,12 +561,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="today" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login/log/sai-2019-03-09-14-11-23.json" />
-    <entry file="file://$PROJECT_DIR$/login/log/sai-2019-03-09-14-11-58.json" />
-    <entry file="file://$PROJECT_DIR$/config/db.conf" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/40bc8b5d-f984-42aa-9dfb-fe4a67aca496/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/db.cnf" />
     <entry file="file://$PROJECT_DIR$/login/MathTest.py" />
     <entry file="file://$PROJECT_DIR$/exam/wsgi.py">
@@ -609,9 +590,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/log/sai-2019-03-10-04-20-46.json" />
-    <entry file="file://$PROJECT_DIR$/templates/head.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/testMath_test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -642,30 +620,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/log/jin-2019-03-12-01-19-24.json" />
-    <entry file="file://$PROJECT_DIR$/templates/summary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/log/jin-2019-03-12-01-27-30.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/log/jin-2019-03-12-01-27-49.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="104" selection-start-line="104" selection-end-line="106" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/login/log/jin-2019-03-12-01-27-30.json" />
+    <entry file="file://$PROJECT_DIR$/login/log/jin-2019-03-12-01-27-49.json" />
     <entry file="file://$PROJECT_DIR$/login/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -683,26 +639,8 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e0150329-cb39-4043-9ca7-c04603b27101/console_1.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/migrations/0005_auto_20190310_1308.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/login/migrations/0005_auto_20190310_1308.py" />
+    <entry file="file://$PROJECT_DIR$/login/test.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/exam/venv/lib/python3.7/site-packages/django/db/models/query_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -710,9 +648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/migrations/0002_arithmetic_date.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/login/migrations/0002_arithmetic_date.py" />
     <entry file="file://$PROJECT_DIR$/login/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -781,26 +717,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/migrations/0002_auto_20190314_0145.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
-          <folding>
-            <element signature="e#20#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/login/migrations/0002_auto_20190314_0145.py" />
     <entry file="file://$PROJECT_DIR$/login/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -822,21 +739,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/subjects.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="106" column="63" selection-start-line="106" selection-start-column="63" selection-end-line="106" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/head.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ec760a7a-46ce-4b94-82c7-4ec4039a668f/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/testMath.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="231">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/testMath.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2145">
-          <caret line="143" column="29" lean-forward="true" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
+        <state relative-caret-position="-744">
+          <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ec760a7a-46ce-4b94-82c7-4ec4039a668f/schema/main/table/login_arithmetic">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ec760a7a-46ce-4b94-82c7-4ec4039a668f/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="102" lean-forward="true" selection-start-line="3" selection-start-column="102" selection-end-line="3" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="170" column="20" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#15#24#0" expanded="true" />
           </folding>
         </state>
       </provider>

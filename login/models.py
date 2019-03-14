@@ -9,15 +9,15 @@ class Arithmetic(models.Model):
     elapsed_time = models.CharField(max_length=10)
     results = models.IntegerField()
     operation = models.CharField(max_length=3)
-    date = models.CharField(max_length=30)
+    date = models.DateField(max_length=30)
 
-    def __init__(self, which_angel, date, score, elapsed_time, results, body, answer, operation):
-        super().__init__()
-        self.which_angel = which_angel
-        self.date = date
-        self.score = score
-        self.elapsed_time = elapsed_time
-        self.results = results
-        self.body = body
-        self.answer = answer
-        self.operation = operation
+    # def __init__(self, which_angel, date, score, elapsed_time, results, body, answer, operation):
+    #     super().__init__()
+    #     self.which_angel = which_angel
+    #     self.date = date
+    #     self.score = score
+    #     self.elapsed_time = elapsed_time
+    #     self.results = results
+    #     self.body = body
+    #     self.answer = answer
+    #     self.operation = operation
