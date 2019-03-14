@@ -21,3 +21,11 @@ class Arithmetic(models.Model):
     #     self.body = body
     #     self.answer = answer
     #     self.operation = operation
+
+
+class MathSummary(models.Model):
+    which_angel = models.CharField(max_length=20)
+    wrong = models.IntegerField()
+    right = models.IntegerField()
+    total = models.IntegerField()
+    date = models.DateField(max_length=10)

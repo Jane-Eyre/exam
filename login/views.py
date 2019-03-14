@@ -9,6 +9,7 @@ from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from login.models import Arithmetic
+from login.models import MathSummary
 import datetime
 
 path = os.path.dirname(os.path.realpath(__file__))
@@ -21,7 +22,7 @@ def show(request):
         print("session:", username)
         data = generateTest(request)
         json.dumps(data)
-        return render(request, '../static/testMath.html.backup', {'data': data})
+        return render(request, 'testMath.html', {'data': data})
     else:
         return render(request, 'login.html')
 
@@ -111,7 +112,7 @@ def register(request):
 # 用户登录
 @csrf_exempt
 def my_login(request):
-    queryToday(request)
+    query_today(request)
     errors = []
     account = None
     password = None
@@ -130,6 +131,8 @@ def my_login(request):
             user = auth.authenticate(username=account, password=password)
             if user is not None:
                 if user.is_active:
+                    if user.username == "bbb":
+                        return redirect('/summary')
                     auth.login(request, user)
                     print('account:', account)
                     request.session["username"] = user.username
@@ -148,11 +151,13 @@ def my_logout(request):
 
 
 def summary(request):
-    return render(request, 'summary.html')
+    data = query_today(request)
+    return render(request, 'summary.html', {"data": data})
 
 
 def saveLog(result):
     result = json.loads(result)
+    today = datetime.datetime.now().date()
 
     a = Arithmetic(which_angel=result['whichAngel'],
                    date=result['date'],
@@ -163,9 +168,34 @@ def saveLog(result):
                    answer=result['answer'],
                    operation=result['operation'])
     a.save()
+    if MathSummary.objects.filter(which_angel=a.which_angel, date=today):
+        all_test = MathSummary.objects.get(which_angel=a.which_angel, date=today).total
+        if a.score:
+            right_num = MathSummary.objects.get(which_angel=a.which_angel, date=today).right
+            ms = MathSummary.objects.get(which_angel=a.which_angel, date=today)
+            ms.right = right_num + 1
+            print("对了一道题")
+
+        else:
+            wrong_num = MathSummary.objects.get(which_angel=a.which_angel, date=today).wrong
+            ms = MathSummary.objects.get(which_angel=a.which_angel, date=today)
+            ms.wrong = wrong_num + 1
+            print("错了一道题")
+        MathSummary.objects.get(which_angel=a.which_angel, date=today).total = all_test + 1
+    else:
+        if a.score:
+            ms = MathSummary.objects.create(which_angel=a.which_angel, total=1, date=today, right=1, wrong=0)
+        else:
+            ms = MathSummary.objects.create(which_angel=a.which_angel, total=1, date=today, right=0, wrong=1)
+    ms.save()
 
 
-def queryToday(request):
+def query_today(request):
+    data = list(MathSummary.objects.all())
+    return data
+
+
+def query_today_single(request):
+    username = request.session.get("username")
     today = datetime.datetime.now().date()
-    for e in Arithmetic.objects.all():
-        print(e.date)
+    data = list(MathSummary.objects.filter(username=username, date=today))
