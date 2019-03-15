@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="074222f9-7c05-4749-b776-a17592e3dae7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/testMath.js.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/testMath.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/testMath.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,19 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/testMath.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1340">
-              <caret line="96" column="99" selection-start-line="96" selection-start-column="90" selection-end-line="96" selection-end-column="99" />
+            <state relative-caret-position="296">
+              <caret line="100" column="102" selection-start-line="100" selection-start-column="102" selection-end-line="100" selection-end-column="102" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/testMath.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="390">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
@@ -213,12 +212,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ec760a7a-46ce-4b94-82c7-4ec4039a668f/console_1.sql" />
         <option value="$PROJECT_DIR$/login/models.py" />
         <option value="$PROJECT_DIR$/static/js/testMath.js" />
-        <option value="$PROJECT_DIR$/templates/testMath.html" />
         <option value="$PROJECT_DIR$/templates/SingleForStudent.html" />
         <option value="$PROJECT_DIR$/templates/summary.html" />
         <option value="$PROJECT_DIR$/login/views.py" />
         <option value="$PROJECT_DIR$/templates/SingleSummary.html" />
         <option value="$PROJECT_DIR$/login/urls.py" />
+        <option value="$PROJECT_DIR$/templates/testMath.html" />
       </list>
     </option>
   </component>
@@ -242,22 +241,6 @@
             <path>
               <item name="exam" type="b2602c69:ProjectViewProjectNode" />
               <item name="exam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -493,7 +476,7 @@
       <workItem from="1552208547893" duration="19160000" />
       <workItem from="1552462850966" duration="19310000" />
       <workItem from="1552532753922" duration="6753000" />
-      <workItem from="1552544717848" duration="22102000" />
+      <workItem from="1552544717848" duration="22341000" />
     </task>
     <task id="LOCAL-00001" summary="today">
       <created>1551413971814</created>
@@ -534,7 +517,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228626000" />
+    <option name="totallyTimeSpent" value="228865000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,7 +538,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.39638555" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.270415" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" visible="true" weight="0.2626506" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.2626506" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.25662652" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -564,7 +547,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.4626506" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.5686747" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.22891566" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.22891566" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32891566" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="14" visible="true" weight="0.32931727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -857,17 +840,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/testMath.html">
+    <entry file="file://$PROJECT_DIR$/static/js/testMath.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1340">
-          <caret line="96" column="99" selection-start-line="96" selection-start-column="90" selection-end-line="96" selection-end-column="99" />
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/testMath.js">
+    <entry file="file://$PROJECT_DIR$/templates/testMath.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="296">
+          <caret line="100" column="102" selection-start-line="100" selection-start-column="102" selection-end-line="100" selection-end-column="102" />
         </state>
       </provider>
     </entry>
