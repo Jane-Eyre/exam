@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="074222f9-7c05-4749-b776-a17592e3dae7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/SingleForStudent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/SingleSummary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/SingleSummary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/summary.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
+            <state relative-caret-position="1995">
               <caret line="133" column="27" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
               <folding>
                 <element signature="e#15#24#0" expanded="true" />
@@ -88,11 +83,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="17" />
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+              <folding>
+                <element signature="e#50#78#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,43 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exam/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/summary.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/SingleSummary.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/SingleForStudent.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -245,8 +208,8 @@
         <option value="$PROJECT_DIR$/templates/SingleForStudent.html" />
         <option value="$PROJECT_DIR$/templates/summary.html" />
         <option value="$PROJECT_DIR$/login/views.py" />
-        <option value="$PROJECT_DIR$/login/urls.py" />
         <option value="$PROJECT_DIR$/templates/SingleSummary.html" />
+        <option value="$PROJECT_DIR$/login/urls.py" />
       </list>
     </option>
   </component>
@@ -264,43 +227,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="exam" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -531,7 +458,7 @@
       <workItem from="1552208547893" duration="19160000" />
       <workItem from="1552462850966" duration="19310000" />
       <workItem from="1552532753922" duration="6753000" />
-      <workItem from="1552544717848" duration="20383000" />
+      <workItem from="1552544717848" duration="21593000" />
     </task>
     <task id="LOCAL-00001" summary="today">
       <created>1551413971814</created>
@@ -558,7 +485,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226907000" />
+    <option name="totallyTimeSpent" value="228117000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -579,7 +506,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.39638555" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.270415" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49928468" visible="true" weight="0.2626506" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.2626506" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.25662652" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -588,7 +515,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.4626506" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.5686747" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.22891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.22891566" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32891566" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="14" visible="true" weight="0.32931727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -859,16 +786,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/SingleSummary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/summary.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="308">
           <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
+        <state relative-caret-position="1995">
           <caret line="133" column="27" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
           <folding>
             <element signature="e#15#24#0" expanded="true" />
@@ -878,22 +812,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exam/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="375">
+          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/SingleSummary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#50#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

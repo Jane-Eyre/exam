@@ -15,16 +15,14 @@
             color: white;
             font-size: 50px;
         }
+        .btn-block + .btn-block {
+            margin-top: 0px;
+        }
 
     </style>
 
     <!-- Modernizr JS -->
     <script src="{% static "bootstrap/js/modernizr-2.6.2.min.js" %}"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-	<script src="{% static "bootstrap/js/modernizr-2.6.2.min.js" %}"></script>
-	<![endif]-->
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="{% static "/bootstrap/js/bootstrap.min.js" %}"></script>
@@ -73,31 +71,35 @@
                 </div>
             </div>
             <div class="row animate-box">
-                <div class="col-md-7 col-md-offset-4">
-                    <div class="col-md-4  col-sm-1 ">
+                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-7 col-xs-offset-1">
+                    <div class = "col-md-2 text-center ">
                         <label class="equation" id="num1"></label>
-                        <label class="equation" id="operation"></label>
-                        <label class="equation" id="num2"> </label>
-                        <label class="equation">=</label>
-
                     </div>
-                    <div class="col-md-3 col-sm-1">
+                    <div class = "col-md-2 text-center ">
+                        <label class="equation" id="operation"></label>
+                    </div>
+                    <div class = "col-md-2 text-center ">
+                        <label class="equation" id="num2"></label>
+                    </div>
+                    <div class = "col-md-2 text-center ">
+                        <label class="equation">=</label>
+                    </div>
+                    <div id = "input" class="col-md-2 col-sm-1 col-xs-1 text-center">
                         <input class="form-control"
-                               style="width: 110px; display:block; font-size:50px; margin-top:19px; height: 50px;"
-                               type="text" id="uanswer">
+                                   style="width: 110px; display:block; font-size:50px; margin-top:19px; height: 50px;"
+                                   type="text" id="uanswer">
                     </div>
                 </div>
             </div>
             <div class="row animate-box">
-                <div class="col-md-2 col-md-offset-3">
-                    <button id="beginTest" class="btn btn-default btn-block" onclick="startTest()">开始</button>
-                </div>
-
-                <div class="col-md-2">
-                    <button id="nextTest" class="btn btn-default btn-block" onclick="saveOne()">下一题</button>
-                </div>
-                <div class="col-md-2">
-                    <button id="endText" class="btn btn-default btn-block" onclick="endMath()">结束</button>
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="col-md-4 col-md-offset-1">
+                        <button id="beginTest" class="btn btn-default btn-block" onclick="startTest()">开始</button>
+                        <button id="endText" style = "display:none" class="btn btn-default btn-block" onclick="endMath()">结束</button>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1">
+                        <button id="nextTest" class="btn btn-default btn-block" onclick="saveOne()">下一题</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -198,6 +200,17 @@
                 console.log("error:" + results);
             }
         })
+    }
+
+    document.onkeydown=keyDownSearch;
+    function keyDownSearch(e) {
+        let theEvent = e || window.event;
+        let code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+        if (code == 13) {
+            $("#nextTest").click();
+            return false;
+        }
+        return true;
     }
 </script>
 </html>
