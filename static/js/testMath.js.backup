@@ -28,8 +28,6 @@ function showTest() {
 function startTest() {
     start_time = new Date();
     $('#nextTest').removeAttr("disabled");
-    $('#beginTest').hide();
     $('#uanswer').attr("readonly", false).focus();
     $("#endText").removeAttr("disabled");
-    $("#endText").show();
 }
