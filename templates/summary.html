@@ -11,7 +11,6 @@
 <body>
 <div>
     <ul class="breadcrumb">
-        <li><a href="../index/">首页</a> <span class="divider">/</span></li>
         <li><a href="../logout/">退出</a> <span class="divider">/</span></li>
     </ul>
     <div class="fh5co-loader"></div>
@@ -35,11 +34,12 @@
             {% for item in data %}
                 <tr>
                     <td><p style="text-align: center"><a
-                            href="/detail?which_angel={{ item.which_angel }}">{{ item.which_angel }}</a></p></td>
+                            href="/summary_detail?which_angel={{ item.which_angel }}">{{ item.which_angel }}</a></p>
+                    </td>
                     <td><p style="text-align: center"><label>{{ item.right }}</label></p></td>
                     <td><p style="text-align: center"><label>{{ item.wrong }}</label></p></td>
                     <td><p style="text-align: center"><label>{{ item.total }}</label></p></td>
-{#                   <td><a id="{{ item.which_angel }}" href="/detail">查看详情</a></td>#}
+                    {#                   <td><a id="{{ item.which_angel }}" href="/summary_detail">查看详情</a></td>#}
                 </tr>
             {% endfor %}
             </tbody>

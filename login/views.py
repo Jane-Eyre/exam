@@ -16,6 +16,7 @@ path = os.path.dirname(os.path.realpath(__file__))
 log_path = path + os.sep + 'log' + os.sep
 
 
+# 数学测试界面
 def show(request):
     username = request.session.get("username")
     if username:
@@ -27,20 +28,41 @@ def show(request):
         return render(request, 'login.html')
 
 
+# 产生新的数学题目
+def generateTest(request):
+    username = request.session.get("username")
+    n1 = random.randint(11, 100)
+    n2 = random.randint(10, n1 - 1)
+    s_p = '{0} - {1} ='.format(n1, n2)
+    s_m = '{0} + {1} ='.format(n1, n2)
+    if n1 % 2 == 0:
+        s = s_p
+        operation = '-'
+        r_answer = n1 - n2
+    else:
+        s = s_m
+        operation = '+'
+        r_answer = n1 + n2
+    data = {'operation': operation, 'body': s, 'result': r_answer, 'num1': n1, 'num2': n2,
+            'which_angel': username}
+    return data
+
+
+# 处理小朋友提交的答案
 def answer(request):
     result = str(request.body, 'utf-8')
-    print("result:", result)
     saveLog(result)
     data = generateTest(request)
-    print("new data:", data)
     return HttpResponse(json.dumps(data), content_type='application/json')
 
 
+# 登陆后的导引页面
 def index(request):
     username = request.session.get("username")
     if username:
         return render(request, 'index.html')
     else:
+        # 没有当前小朋友的seesion，跳转至登录页
         return render(request, 'login.html')
 
 
@@ -50,21 +72,26 @@ def my_logout(request):
     return redirect('/login/')
 
 
+# 展示当天所有小朋友的做题情况
 def summary(request):
     data = query_today(request)
     return render(request, 'summary.html', {"data": data})
 
 
+# 查询当天所有小朋友的做题情况
 def query_today(request):
-    data = list(MathSummary.objects.all())
+    today = datetime.datetime.now().date()
+    data = list(MathSummary.objects.filter(date=today))
     return data
 
 
+# 展示当前登录小朋友的当天做题情况
 def single(request):
     data = query_today_single(request)
-    return render(request, "SingleSummary.html", {"data": data})
+    return render(request, "SingleForStudent.html", {"data": data})
 
 
+# 查询当前登录小朋友的做题情况
 def query_today_single(request):
     username = request.session.get("username")
     today = datetime.datetime.now().date()
@@ -72,6 +99,7 @@ def query_today_single(request):
     return data
 
 
+# 老师界面，查询指定小朋友做题情况
 def query_today_specific_single(which_angel):
     today = datetime.datetime.now().date()
     data = list(Arithmetic.objects.filter(which_angel=which_angel, date=today))
@@ -80,6 +108,7 @@ def query_today_specific_single(which_angel):
     return data
 
 
+# 查询所有小朋友的做题统计
 def summary_detail(request):
     which_ange = request.GET.get("which_angel")
     print(which_ange)
@@ -87,6 +116,7 @@ def summary_detail(request):
     return render(request, "SingleSummary.html", {"data": data})
 
 
+# 保存小朋友的做题情况
 def saveLog(result):
     result = json.loads(result)
     today = datetime.datetime.now().date()
@@ -99,7 +129,9 @@ def saveLog(result):
                    body=result['body'],
                    answer=result['answer'],
                    operation=result['operation'])
+    # 保存一条新的做题记录
     a.save()
+    # 根据做题记录，更新MathSummary表
     if MathSummary.objects.filter(which_angel=a.which_angel, date=today):
         all_test = MathSummary.objects.get(which_angel=a.which_angel, date=today).total
         if a.score:
@@ -189,6 +221,7 @@ def my_login(request):
             if user is not None:
                 if user.is_active:
                     if user.username == "teacher":
+                        request.session["username"] = user.username
                         return redirect('/summary')
                     auth.login(request, user)
                     print('account:', account)
@@ -199,22 +232,3 @@ def my_login(request):
             else:
                 errors.append('用户名或密码错误')
     return render(request, 'login.html', {'errors': errors})
-
-
-def generateTest(request):
-    username = request.session.get("username")
-    n1 = random.randint(11, 100)
-    n2 = random.randint(10, n1 - 1)
-    s_p = '{0} - {1} ='.format(n1, n2)
-    s_m = '{0} + {1} ='.format(n1, n2)
-    if n1 % 2 == 0:
-        s = s_p
-        operation = '-'
-        r_answer = n1 - n2
-    else:
-        s = s_m
-        operation = '+'
-        r_answer = n1 + n2
-    data = {'operation': operation, 'body': s, 'result': r_answer, 'num1': n1, 'num2': n2,
-            'which_angel': username}
-    return data
