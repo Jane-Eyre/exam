@@ -15,6 +15,7 @@
             color: white;
             font-size: 50px;
         }
+
         .btn-block + .btn-block {
             margin-top: 0px;
         }
@@ -72,22 +73,22 @@
             </div>
             <div class="row animate-box">
                 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-7 col-xs-offset-1">
-                    <div class = "col-md-2 text-center ">
+                    <div class="col-md-2 text-center ">
                         <label class="equation" id="num1"></label>
                     </div>
-                    <div class = "col-md-2 text-center ">
+                    <div class="col-md-2 text-center ">
                         <label class="equation" id="operation"></label>
                     </div>
-                    <div class = "col-md-2 text-center ">
+                    <div class="col-md-2 text-center ">
                         <label class="equation" id="num2"></label>
                     </div>
-                    <div class = "col-md-2 text-center ">
+                    <div class="col-md-2 text-center ">
                         <label class="equation">=</label>
                     </div>
-                    <div id = "input" class="col-md-2 col-sm-1 col-xs-1 text-center">
-                        <input class="form-control"
-                                   style="width: 110px; display:block; font-size:50px; margin-top:19px; height: 50px;"
-                                   type="text" id="uanswer">
+                    <div id="input" class="col-md-2 col-sm-1 col-xs-1 text-center">
+                        <input
+                                style="width: 110px; display:block; font-size:45px; text-align: center; margin-top:19px; height: 50px;"
+                                type="text" id="uanswer">
                     </div>
                 </div>
             </div>
@@ -95,7 +96,9 @@
                 <div class="col-md-6 col-md-offset-3">
                     <div class="col-md-4 col-md-offset-1">
                         <button id="beginTest" class="btn btn-default btn-block" onclick="startTest()">开始</button>
-                        <button id="endText" style = "display:none" class="btn btn-default btn-block" onclick="endMath()">结束</button>
+                        <button id="endText" style="display:none" class="btn btn-default btn-block" onclick="endMath()">
+                            结束
+                        </button>
                     </div>
                     <div class="col-md-4 col-md-offset-1">
                         <button id="nextTest" class="btn btn-default btn-block" onclick="saveOne()">再来一题</button>
@@ -127,14 +130,17 @@
     })
 
     function saveData() {
+        $("#uanswer").focus();
         let date = new Date().Format('yyyy-MM-dd');
         let end_time = new Date();
         let elapsed_time = parseInt((end_time - start_time) / 1000);
         let your_answer = $("#uanswer").val();
         if ($.trim(your_answer) == "") {
-            alert("是不是忘记写答案了~");
-            $("#uanswer").focus();
-            return;
+            if (!window.confirm("当前题目没有写答案,是否提交?")) {
+                return;
+            } else {
+                $(location).attr('href', '../single/');
+            }
         }
         start_time = new Date()
         console.log("your_answer:" + your_answer);
@@ -202,7 +208,8 @@
         })
     }
 
-    document.onkeydown=keyDownSearch;
+    document.onkeydown = keyDownSearch;
+
     function keyDownSearch(e) {
         let theEvent = e || window.event;
         let code = theEvent.keyCode || theEvent.which || theEvent.charCode;
