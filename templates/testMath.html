@@ -135,13 +135,6 @@
         let end_time = new Date();
         let elapsed_time = parseInt((end_time - start_time) / 1000);
         let your_answer = $("#uanswer").val();
-        if ($.trim(your_answer) == "") {
-            if (!window.confirm("当前题目没有写答案,是否提交?")) {
-                return;
-            } else {
-                $(location).attr('href', '../single/');
-            }
-        }
         start_time = new Date()
         console.log("your_answer:" + your_answer);
         let operation = data.operation;
@@ -171,7 +164,12 @@
     }
 
     function saveOne() {
+        let your_answer = $("#uanswer").val();
         let blackBoard = saveData();
+        if ($.trim(your_answer) == "") {
+            alert("是不是忘记写答案了?")
+            return;
+        }
         console.log(JSON.stringify(blackBoard));
         $.ajax({
             method: "post",
@@ -191,8 +189,17 @@
     }
 
     function endMath() {
+        let your_answer = $("#uanswer").val();
         let blackBoard = saveData();
         console.log(JSON.stringify(blackBoard));
+        if ($.trim(your_answer) == "") {
+            if (!window.confirm("确定结束吗？")) {
+                return;
+            } else {
+                $(location).attr('href', '../single/');
+            }
+        }
+
         $.ajax({
             method: "post",
             url: "../answer/",
