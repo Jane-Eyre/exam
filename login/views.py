@@ -18,18 +18,24 @@ log_path = path + os.sep + 'log' + os.sep
 
 # 数学测试界面
 def show(request):
+    test_type = request.GET.get("type")
     username = request.session.get("username")
+    request.session["type"] = test_type
+    data = ""
     if username:
         print("session:", username)
-        data = generateTest(request)
+        if test_type == "0":
+            data = generateAS(request)
+        if test_type == "1":
+            data = generateMD(request)
         json.dumps(data)
         return render(request, 'testMath.html', {'data': data})
     else:
         return render(request, 'login.html')
 
 
-# 产生新的数学题目
-def generateTest(request):
+# 产生新的加减法题目
+def generateAS(request):
     username = request.session.get("username")
     n1 = random.randint(11, 100)
     n2 = random.randint(10, n1 - 1)
@@ -48,11 +54,37 @@ def generateTest(request):
     return data
 
 
+# 产生新的乘除法题目
+def generateMD(request):
+    username = request.session.get("username")
+    n2 = random.randint(1, 9)
+    multiple = random.randint(1, 9)
+    n1 = n2 * multiple
+    s_mul = "{0} * {1} =".format(n2, n1)
+    s_div = "{0} / {1} =".format(n1, n2)
+    if n2 % 2 == 0:
+        s = s_mul
+        operation = "X"
+        r_answer = n2 * n1
+    else:
+        s = s_div
+        operation = "/"
+        r_answer = multiple
+    data = {'operation': operation, 'body': s, 'result': r_answer, 'num1': n1, 'num2': n2,
+            'which_angel': username}
+    return data
+
+
 # 处理小朋友提交的答案
 def answer(request):
     result = str(request.body, 'utf-8')
     saveLog(result)
-    data = generateTest(request)
+    data = ""
+    test_type = request.session.get("type")
+    if test_type == "0":
+        data = generateAS(request)
+    elif test_type == "1":
+        data = generateMD(request)
     return HttpResponse(json.dumps(data), content_type='application/json')
 
 

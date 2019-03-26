@@ -122,6 +122,7 @@
         $('#uanswer').attr("readonly", "readonly");
         data = "{{ data|safe }}";
         data = data.replace(/'/g, "\"");
+        console.log(data);
         data = JSON.parse(data);
         console.log(data);
         console.log("result:" + data.result);
@@ -170,7 +171,7 @@
             alert("是不是忘记写答案了?")
             return;
         }
-        console.log(JSON.stringify(blackBoard));
+        console.log("blackBorad:" + JSON.stringify(blackBoard));
         $.ajax({
             method: "post",
             url: "../answer/",
