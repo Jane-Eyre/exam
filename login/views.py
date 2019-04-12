@@ -8,8 +8,7 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
-from login.models import Arithmetic
-from login.models import MathSummary
+from .models import Arithmetic, MathSummary, GenerateProblems, Problems
 import datetime
 
 path = os.path.dirname(os.path.realpath(__file__))
@@ -73,6 +72,60 @@ def generateMD(request):
     data = {'operation': operation, 'body': s, 'result': r_answer, 'num1': n1, 'num2': n2,
             'which_angel': username}
     return data
+
+
+# 产生新的加减法应用题
+def generate_problems(request):
+    scene_list = ['商店', '学校', '游乐园']
+    background_list = ['原本有']
+    quantifier_list = ['个']
+    obj_list = ['糖果', '兔子', '滑梯']
+    activity_list = ['又多了', '拿走了']
+    question_list = ['请问现在一共有多少']
+    n1 = random.randint(1, 100)
+    n2 = random.randint(1, 100)
+    op_list = ['+', '-']
+
+    r_s = random.randint(0, len(scene_list)-1)
+    r_o = random.randint(0, len(obj_list)-1)
+    if n2 <= n1:
+        r_a = random.randint(0, 1)
+    else:
+        r_a = 0
+
+    scene = scene_list[r_s]
+    background = background_list[0]
+    quantifier = quantifier_list[0]
+    obj = obj_list[r_o]
+    activity = activity_list[r_a]
+    question = question_list[0]
+    op = op_list[r_a]
+
+    if r_a == 0:
+        res = n1+n2
+    else:
+        res = n1-n2
+
+    body_dic = {'scene': scene, 'background': background, 'quantifier': quantifier, 'obj': obj,
+                'activity': activity, 'question': question, 'n1': n1, 'n2': n2, 'op': op, 'res': res}
+
+    body = GenerateProblems(scene=scene, background=background, quantifier=quantifier, obj=obj,
+                            activity=activity, question=question, n1=n1, n2=n2, op=op, res=res)
+    body.save()
+
+    question = '在'+scene+'里, '+background+str(n1)+quantifier+obj+', '+activity+str(n2)+quantifier+obj+', '+question+\
+               quantifier+obj+'?'
+    print(question)
+    q_body = Problems(body=question, problem=body)
+    q_body.save()
+    return question
+
+
+# 应用题测试界面
+def problems(request):
+    problem = generate_problems(request)
+    data = problem
+    return render(request, 'problems.html', {"data": data})
 
 
 # 处理小朋友提交的答案
